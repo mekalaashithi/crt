@@ -1,0 +1,13 @@
+def Reverse_String(s: str) -> str:
+    reversed_string = ""
+    
+    # Traverse the string from last index to first
+    for i in range(len(s) - 1, -1, -1):
+        reversed_string += s[i]
+    
+    return reversed_string
+
+
+if __name__ == '__main__':
+    s = input()
+    print(Reverse_String(s))
